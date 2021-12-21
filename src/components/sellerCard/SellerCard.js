@@ -33,11 +33,13 @@ const SellerCardStyled = styled.div`
 
   &:hover {
     transform: translateY(-10px);
+    box-shadow: 2px 2px 2px #8651D5;
   }
   .SellerCard {
     display: flex;
     align-items: center;
     padding: 1.5rem 1rem;
+
     .number {
       padding-right: 1rem;
       font-size: 1.6rem;

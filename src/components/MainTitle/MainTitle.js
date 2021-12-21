@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import SmallHeading from "../smallHeading/SmallHeading";
+import Fade from "react-reveal/Fade";
 
 const MainTitle = ({ title, subtitle, para }) => {
   return (
     <MainTitleStyled>
-      <SmallHeading title={subtitle} />
-      <h2>{title}</h2>
-      <p>{para}</p>
+      <Fade bottom>
+        <SmallHeading title={subtitle} />
+        <h2>{title}</h2>
+        <p>{para}</p>
+      </Fade>
     </MainTitleStyled>
   );
 };

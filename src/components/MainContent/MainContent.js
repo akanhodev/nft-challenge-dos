@@ -4,6 +4,7 @@ import Navigation from "../Navigation/Navigation";
 import SmallHeading from "../smallHeading/SmallHeading";
 import blockchainImage from "../../img/bchain.png";
 import CtaButton from "../ctaButton/CtaButton";
+import Fade from "react-reveal/Fade";
 
 const MainContent = () => {
   return (
@@ -11,28 +12,32 @@ const MainContent = () => {
       <Navigation />
       <div className="content">
         <div className="left">
-          <SmallHeading
-            title="All Digital Currencies in One Place"
-            identifier={"Before"}
-          />
-          <h1>
-            All NFTs You need in One Marketplace The Best Place to Collect , Buy
-            and Sell <span className="GradientText">Awesome NFTs</span>
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id
-            unde officiis hic nihil, quasi soluta ex corrupti nesciunt dolorem.
-            Cumque obcaecati sint officiis quis laboriosam vitae, error
-            molestiae temporibus voluptatum consectetur, quibusdam magni,
-            delectus a autem soluta optio laborum!
-          </p>
-          <div className="btns-con">
-            <CtaButton name={"discover more"} />
-            <CtaButton name={"get help"} />
-          </div>
+          <Fade left>
+            <SmallHeading
+              title="All Digital Currencies in One Place"
+              identifier={"Before"}
+            />
+            <h1>
+              All NFTs You need in One Marketplace The Best Place to Collect ,
+              Buy and Sell <span className="GradientText">Awesome NFTs</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id
+              unde officiis hic nihil, quasi soluta ex corrupti nesciunt
+              dolorem. Cumque obcaecati sint officiis quis laboriosam vitae,
+              error molestiae temporibus voluptatum consectetur, quibusdam
+              magni, delectus a autem soluta optio laborum!
+            </p>
+            <div className="btns-con">
+              <CtaButton name={"discover more"} />
+              <CtaButton name={"get help"} />
+            </div>
+          </Fade>
         </div>
         <div className="right">
-          <img src={blockchainImage} alt="blockchainImage" />
+          <Fade right>
+            <img src={blockchainImage} alt="blockchainImage" />
+          </Fade>
         </div>
       </div>
     </MainContentStyled>
