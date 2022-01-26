@@ -57,6 +57,12 @@ const MainContentStyled = styled.div`
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     width: 100%;
+    @media screen and (max-width: 1024px){
+      p {
+        flex-wrap: nowrap;
+      }
+
+    }
     .btns-con {
       margin-top: 2rem;
     }

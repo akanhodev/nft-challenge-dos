@@ -10,7 +10,6 @@ const MainArea = () => {
     <MainAreaStyled>
       <video src={business} muted playsInline autoPlay loop></video>
       <img src={circles} alt="" className="overlay" />
-
       <InnerLayout>
         <MainContent />
       </InnerLayout>

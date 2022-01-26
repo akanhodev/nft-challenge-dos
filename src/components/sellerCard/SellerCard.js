@@ -30,6 +30,7 @@ const SellerCardStyled = styled.div`
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.03);
   transition: all 0.4s ease-in-out;
+  
 
   &:hover {
     transform: translateY(-10px);

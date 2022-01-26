@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     .title-con{
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
     }
